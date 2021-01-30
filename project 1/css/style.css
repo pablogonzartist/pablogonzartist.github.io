@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Ornamentum;
+    src: url(fonts/Ornamentum-Regular.ttf)
+}
+
+html {
+    background-color: rgb(55, 171, 206);
+}
+
+h1 {
+    font-family: 'Ornamentum-Regular';
+    text-align: center;
+    font-size: 6em;
+}
