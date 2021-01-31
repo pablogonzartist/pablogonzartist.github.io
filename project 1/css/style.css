@@ -2,13 +2,53 @@
     font-family: Ornamentum;
     src: url(fonts/Ornamentum-Regular.ttf)
 }
+@font-face {
+    font-family: KarbonTest;
+    src: url(fonts/KarbonTest-Thin.otf)
+}
+
 
 html {
-    background-color: rgb(55, 171, 206);
+    background-color: black;
 }
 
 h1 {
     font-family: 'Ornamentum-Regular';
     text-align: center;
-    font-size: 6em;
+    font-size: 7em;
+    margin: .25em;
+    font-family: Ornamentum; 
+    background: linear-gradient( 
+    to right, #ff0162, #ff0808, #eedd44,
+     #27cdff, #eedd44); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
 }
+
+h2 {
+    font-family: 'KarbonTest';
+    color: rgb(255, 217, 0);
+    text-align: center;
+    font-size: 1em;
+    margin: 1em;
+}
+
+main {
+text-align: center;
+}
+
+img {
+    height: auto;
+    width: 30%;
+}
+/* Text Glow */ 
+.confirm_selection {
+    animation: glow .5s infinite alternate;
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 4em rgb(255, 4, 4);
+    }
+
+    
