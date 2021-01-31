@@ -15,8 +15,8 @@ html {
 h1 {
     font-family: 'Ornamentum-Regular';
     text-align: center;
-    font-size: 7em;
-    margin: .25em;
+    font-size: 8em;
+    margin: .15em;
     font-family: Ornamentum; 
     background: linear-gradient( 
     to right, #ff0162, #ff0808, #eedd44,
@@ -27,11 +27,19 @@ h1 {
 
 h2 {
     font-family: 'KarbonTest';
-    color: rgb(255, 217, 0);
     text-align: center;
     font-size: 1em;
-    margin: 1em;
-}
+    margin: 2em;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, rgb(255, 230, 0), #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    
+  }
+  
 
 main {
 text-align: center;
@@ -46,9 +54,16 @@ img {
     animation: glow .5s infinite alternate;
 }
 
+
 @keyframes glow {
     to {
         text-shadow: 0 0 4em rgb(255, 4, 4);
     }
-
-    
+}
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }

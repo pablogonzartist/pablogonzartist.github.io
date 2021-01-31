@@ -1,0 +1,13 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 2em;
+}
+.images > div {
+    text-align: center;
+}
+
+.images img {
+    max-width: 100%;s
+    vertical-align: middle;
+}
