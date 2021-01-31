@@ -23,6 +23,7 @@ h1 {
      #27cdff, #eedd44); 
     -webkit-text-fill-color: transparent; 
     -webkit-background-clip: text; 
+    max-width: 100%;
 }
 
 h2 {
@@ -66,4 +67,4 @@ img {
     }
     100% {
       background-position: 500%;
-    }
+    }}
